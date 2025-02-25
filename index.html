@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Суші форма</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">  
+        </header>
+        <main class="main">
+            <div class="container">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" enctype="multipart/form-data">
+                    <div class="header-block">
+                        <div class="title-block"><h1 class="title">Замовлення суші “Супер-сет”</h1></div>
+                        <p class="text">* означає обов’язкове запитання</p>
+                    </div>
+                    <div class="form-block">
+                        <label for="name">Імʼя <span>*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Імʼя" autocomplete="on" required>
+                    </div>
+                    <div class="form-block">
+                        <label for="birthDate">Дата народження <span>*</span></label>
+                        <input type="date" name="birthDate" id="birthDate" autocomplete="off" required>
+                    </div>
+                    <div class="form-block">
+                        <label for="address">Адреса <span>*</span></label>
+                        <input type="text" name="address" id="address" placeholder="Введіть адресу" autocomplete="on" required>
+                    </div>
+                    <div class="form-block">
+                        <label for="number">Номер телефону  <span>*</span></label>
+                        <input type="number" name="number" id="number" placeholder="Номер телефону" autocomplete="on" required>
+                    </div>
+                    <div class="form-block">
+                        <label for="sushiStickCount">Кількість паличок <span>*</span></label>
+                        <input type="number" name="sushiStickCount" id="sushiStickCount" placeholder="Кількість паличок" autocomplete="off">
+                    </div>
+                    <div class="form-block">
+                        <fieldset class="fieldset">
+                            <legend class="fieldset-title">Вид паличок</legend>
+                            <div class="radio-choice">
+                                <input class="radio-button" type="radio" name="sushiType" id="0" value="0" checked>
+                                <label class="no-margin-bottom" for="0">Звичайні</label>
+                            </div>
+                            <div class="radio-choice">
+                                <input class="radio-button"type="radio" name="sushiType" id="1" value="1">
+                                <label class="no-margin-bottom" for="1">Навчальні</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-block checkbox-box" >
+                        <input  class="checkbox-button" type="checkbox" id="bonuses" name="bonuses" value="1">
+                        <label class="no-margin-bottom" for="bonuses">Чи списуємо бонуси?</label>
+                    </div>
+                    <div class="form-block">
+                        <label for="comment">Коментар до замовлення</label>
+                        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                    </div>
+                    <button class="button" type="submit">Оформити замовлення</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
